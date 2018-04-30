@@ -8,7 +8,7 @@ Loginedin = True
 username = input("input your UIS number:")
 password = getpass.getpass("input your password:")
 ip = input("input your ip address:")
-url = 'https://****/include/auth_action.php'
+url = 'https://wlrz.fudan.edu.cn/include/auth_action.php'
 
 data = [
   ('action', 'login'),
