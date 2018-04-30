@@ -8,6 +8,7 @@ Loginedin = True
 username = input("input your UIS number:")
 password = getpass.getpass("input your password:")
 ip = input("input your ip address:")
+url = 'https://****/include/auth_action.php'
 
 data = [
   ('action', 'login'),
@@ -30,7 +31,7 @@ while True:
 
     if Loginedin == False:
         
-        r =requests.post('https://10.108.255.249/include/auth_action.php', data=data, verify=False)
+        r =requests.post(url, data=data, verify=False)
         print(r.ok)
 
     time.sleep(30)
